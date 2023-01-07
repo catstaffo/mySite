@@ -12,8 +12,8 @@ export default function Handler({children}){
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Nav />
-            <main className="bg-dutch-white/10">{children}</main>
-            <Footer className="bg-dutch-white/10" />
+            <main>{children}</main>
+            <Footer />
         </div>
     )
 }
