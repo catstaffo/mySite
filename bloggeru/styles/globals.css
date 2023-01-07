@@ -61,3 +61,10 @@ body {
   background: contain;
   background-position: center;
 }
+
+
+.parallelogram {
+	width: 90%;
+	height: 5px;
+	background: #65DEF1;
+}
