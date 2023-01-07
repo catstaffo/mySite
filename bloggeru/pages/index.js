@@ -32,11 +32,10 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Nav />
       <div className="container mt-5 mx-auto px-2">
         <div className="md:flex">
-          <div className="flex-[1_1_0%] text-gray-700 text-center bg-gray-400 px-5 py-5 m-2 rounded">
-            <Nav />
-          </div><div className="flex-[3_1_0%] text-gray-700 text-center bg-gray-400 px-5 py-5 m-2 rounded">
+          <div className="flex-[3_1_0%] text-gray-700 text-center bg-gray-400 px-5 py-5 m-2 rounded">
           <main className={styles.main}>
             {posts.map((post) => (
               <BlogCard title={post.title}
