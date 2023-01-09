@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from "../../styles/Slug.module.css";
+import styles from "../../styles/pages/Slug.module.css";
 import { GET_BLOGPOST } from "../api/getPost";
 import { SLUG_URL } from "../api/getSlug";
 import { GRAPHCMS } from "../notes"

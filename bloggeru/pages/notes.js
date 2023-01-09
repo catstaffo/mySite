@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request'
 import { GET_BLOGPOSTS } from './api/getPosts'
 import BlogCard from '../components/BlogCard'
-import styles from "../styles/notes.module.css";
+import styles from "../styles/pages/notes.module.css";
 
 export const GRAPHCMS = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPHCMS);
 

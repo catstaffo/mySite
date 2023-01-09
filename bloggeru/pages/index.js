@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from "../styles/Home.module.css";
+import styles from "../styles/pages/Home.module.css";
 import Handler from '../template/handler'
 import Hero from '../components/Hero'
 
