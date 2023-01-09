@@ -2,6 +2,7 @@ import { GraphQLClient } from 'graphql-request'
 import { GET_BLOGPOSTS } from './api/getPosts'
 import BlogCard from '../components/BlogCard'
 import styles from "../styles/pages/notes.module.css";
+import Handler from '../template/handler'; 
 
 export const GRAPHCMS = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPHCMS);
 
@@ -18,6 +19,7 @@ export async function getStaticProps() {
 
 export default function Notes({posts}) {
     return (
+        <Handler>
         <div className="container mx-auto mt-0 px-2">
           <div className="md:flex">
             <div className="flex-[3_1_0%] text-gray-700 text-center px-5 py-5 m-2 rounded">
@@ -35,5 +37,6 @@ export default function Notes({posts}) {
             </div>
           </div>
         </div>
+        </Handler>
     )
 }

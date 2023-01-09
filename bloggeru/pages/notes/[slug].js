@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from "../../styles/pages/Slug.module.css";
+import Handler from '../../template/handler';
 import { GET_BLOGPOST } from "../api/getPost";
 import { SLUG_URL } from "../api/getSlug";
 import { GRAPHCMS } from "../notes"
@@ -26,6 +27,7 @@ export async function getStaticProps({ params }) {
 
 export default function BlogPost({post}){
     return(
+      <Handler>
         <main className={styles.blog}>
             <img src={post.coverPhoto.url} className={styles.cover} />
             <div className={styles.title}>
@@ -38,5 +40,6 @@ export default function BlogPost({post}){
             <h2>{post.title}</h2>
             <div className={styles.content} dangerouslySetInnerHTML={{__html: post.content.html }}></div>
         </main>
+      </Handler>
     )
 }

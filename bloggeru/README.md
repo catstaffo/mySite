@@ -7,4 +7,3 @@ Tasks:
 6. Quick mock up of "Projects" page
 7. Styling for "About" and "Projects"
 8. ***Refactor the styling for Nav and Hero components into their proper stylesheets***
-9. Get the layout handler configured properly
