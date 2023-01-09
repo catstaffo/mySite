@@ -1,22 +1,23 @@
 import Link from 'next/link'
+import styles from '../styles/BlogCard.module.css'
 
 export default function BlogPost({title, author, coverPhoto, datePublished, slug}) {
     return(
-        <div className="card">
-            <Link href={'/posts/' + slug}>
-                <div className="imgcontainer">
+        <div className={styles.card}>
+            <Link href={'/notes/' + slug}>
+                <div className={styles.imgContainer}>
                     <img src={coverPhoto.url} />
                 </div>
             </Link>
-            <div className="text">
+            <div className={styles.text}>
                 <h2>{title}</h2>
             </div>
-            <div className="details">
-                <div className="author">
+            <div className={styles.container}>
+                <div className={styles.author}>
                     <img src={author.avatar.url} />
                     <h3>{author.name}</h3>
                 </div>
-                <div className="date">
+                <div className={styles.date}>
                     <h3>{datePublished}</h3>
                 </div>
             </div>
