@@ -2,18 +2,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/components/Hero.module.css'
 
-
+/* not a meaningless abstraction-- 
+    you did this so you can easily add sections later if you want, since long index pages w/ tabs leading to anchors within the page are what's trendy right now, might want to place "about" section in here instead of separate page?
+*/
 export default function Hero(){
     return (
         <section className="py-12">
             <div className="container mx-auto md:px-20">
-
-                {Divider()}
+                {Section1()}
             </div>
         </section>
     )
 }
-function Divider(){
+
+function Section1(){
     return(
         <div className="grid md:grid-cols-2 boxes">
             <div className="box left">
@@ -25,7 +27,7 @@ function Divider(){
             <div className="right-info box">
                 <div className="px-5">
                     <div className="small-text">
-                        <p className="font-light text-sm">my collection of <Link href="/" className="intext">tools</Link>, <Link href="/" className="intext">thoughts</Link>, and <Link href="/" className="intext">work</Link></p>
+                        <p className="font-light text-sm">my collection of <Link href="/" className="intext">tools</Link>, <Link href="/notes" className="intext">thoughts</Link>, and <Link href="/projects" className="intext">work</Link></p>
                         <div className="parallelogram float-right z-0 flex"></div>
                     </div>
                     <div className="welcome py-5">

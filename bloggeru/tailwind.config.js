@@ -11,7 +11,6 @@ module.exports = {
         'honey': '#FFBE33',
         'lilac': '#C9C9EE',
         'sky-blue': '#65DEF1',
-
       }
     },
   },
