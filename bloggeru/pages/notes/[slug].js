@@ -1,14 +1,11 @@
 import Image from 'next/image';
 import styles from "../../styles/Slug.module.css";
-import { GraphQLClient } from 'graphql-request';
 import { GET_BLOGPOST } from "../api/getPost";
 import { SLUG_URL } from "../api/getSlug";
-
-
-const graphcms = new GraphQLClient("https://api-us-west-2.hygraph.com/v2/clccjupzo3xq601uoedv66cxq/master");
+import { GRAPHCMS } from "../notes"
 
 export async function getStaticPaths() {
-  const { posts } = await graphcms.request(SLUG_URL);
+  const { posts } = await GRAPHCMS.request(SLUG_URL);
   return {
     paths: posts.map((post) => ({ params: { slug: post.slug } })),
     fallback: false,
@@ -17,7 +14,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const slug = params.slug;
-  const data = await graphcms.request(GET_BLOGPOST, { slug });
+  const data = await GRAPHCMS.request(GET_BLOGPOST, { slug });
   const post = data.post;
   return {
     props: {

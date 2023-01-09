@@ -3,11 +3,11 @@ import { GET_BLOGPOSTS } from './api/getPosts'
 import BlogCard from '../components/BlogCard'
 import styles from "../styles/notes.module.css";
 
-const graphcms = new GraphQLClient("https://api-us-west-2.hygraph.com/v2/clccjupzo3xq601uoedv66cxq/master");
+export const GRAPHCMS = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPHCMS);
 
 
 export async function getStaticProps() {
-  const { posts } = await graphcms.request(GET_BLOGPOSTS);
+  const { posts } = await GRAPHCMS.request(GET_BLOGPOSTS);
   return {
     props: {
       posts,
