@@ -16,7 +16,7 @@ function Divider(){
         <div className="grid md:grid-cols-2 boxes">
             <div className="box left">
                 <div>
-                    <img src={"/images/pngegg.png"} alt="state machine" className="max-h-[180px] inset-0" />
+                    <img src={"/images/statemachine.png"} alt="state machine" className="max-h-[180px] inset-0" />
                     <img src={"/images/blochsphere.png"} alt="bloch sphere" className="max-h-[320px] -mt-8 float-right"/>
                 </div>
             </div>
@@ -33,7 +33,7 @@ function Divider(){
                             01110111 01100101 01101100 01100011 01101111 01101101 01100101 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01110011 01101001 01110100 01100101 00100000 01101001 01110011 00100000 01100001 00100000 01110000 01100101 01110010 01110011 01101111 01101110 01100001 01101100 00100000 01110000 01110010 01101111 01101010 01100101 01100011 01110100 00101101 00101101 00100000 01100110 01100101 01100101 01101100 00100000 01100110 01110010 01100101 01100101 00100000 01110100 01101111 00100000 01100101 01111000 01110000 01101100 01101111 01110010 01100101 00100001</p>
                         <div className="parallelogram float-right z-0 flex"></div>
                     </div>
-                <img src={"/images/xorgate.png"} alt="state machine" className="max-h-[60px] z-20 float-right overflow-visible"/>
+                <img src={"/images/xorgate.png"} alt="xor gate" className="max-h-[60px] z-20 float-right overflow-visible"/>
             </div>
         </div>
         </div>
