@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,8 +9,17 @@
   margin: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
 * > * {
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -26,7 +35,7 @@ body {
 }
 
 .inline-block {
-   display: inline-block;
+  display: inline-block;
 }
 
 .container {
@@ -36,7 +45,6 @@ body {
 }
 
 .boxes .container {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -48,23 +56,15 @@ body {
   padding: 15px 0px;
   min-height: 400px;
   max-image-height: 30%;
-  overflow: visible;
 }
 
 .box img {
   display: inline-block;
-  flex-shrink:auto
+  flex-shrink: auto;
 }
-
-.left {
-  background-image:url('/images/graphbg.png');
-  background: contain;
-  background-position: center;
-}
-
 
 .parallelogram {
-	width: 90%;
-	height: 5px;
-	background: #65DEF1;
+  width: 90%;
+  height: 5px;
+  background: #65def1;
 }
