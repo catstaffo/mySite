@@ -22,7 +22,7 @@ export default function Notes({posts}) {
         <Handler>
         <div className="container mx-auto mt-0 px-2">
           <div className="md:flex">
-            <div className="flex-[3_1_0%] text-gray-700 text-center px-5 py-5 m-2 rounded">
+            <div className="flex-[3_1_0%] text-gray-800 text-center px-5 py-5 m-2 rounded">
             <div className={styles.card}>
               {posts.map((post) => (
                 <BlogCard title={post.title}
